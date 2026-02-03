@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import {ELITE} from "@/lib/Brand";
+import {ELITE} from "@/lib/brand";
 
 export const galleryImages = [
         "img1.jpeg",

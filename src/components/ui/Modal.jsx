@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 
-import {ELITE} from "@/lib/Brand";
+import {ELITE} from "@/lib/brand";
 
 export const Modal = ({ open, title, onClose, children }) => {
   useEffect(() => {

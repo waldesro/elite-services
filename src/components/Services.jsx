@@ -1,6 +1,6 @@
 import { Card, CardContent } from "@/components/ui/Card";
 import { useMemo } from "react";
-import {ELITE} from "@/lib/Brand";
+import {ELITE} from "@/lib/brand";
 
 import {
   Sparkles,

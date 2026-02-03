@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { ELITE } from "@/lib/Brand";
+import { ELITE } from "@/lib/brand";
 
 // ✅ Update this path to wherever you store the Elite logo
 import logo from "@/assets/transparent-logo.png";
