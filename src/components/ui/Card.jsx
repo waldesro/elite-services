@@ -1,3 +1,6 @@
+
+import {ELITE} from "@/lib/Brand";
+
 export const Card = ({ className = "", ...props }) => {
   return (
     <div

@@ -1,5 +1,7 @@
 import { useEffect } from "react";
 
+import {ELITE} from "@/lib/Brand";
+
 export const Modal = ({ open, title, onClose, children }) => {
   useEffect(() => {
     if (!open) return;

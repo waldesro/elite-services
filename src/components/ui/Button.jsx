@@ -3,24 +3,25 @@ import clsx from "clsx";
 
 export const Button = ({ variant = "primary", className, ...props }) => {
   const base =
-    "inline-flex items-center justify-center rounded-xl px-4 py-2 text-sm font-semibold transition border focus:outline-none focus:ring-2 focus:ring-offset-2";
+    "inline-flex items-center justify-center rounded-xl px-4 py-2 text-sm font-semibold transition border " +
+    "focus:outline-none focus:ring-2 focus:ring-offset-2";
 
   const variants = {
-    // Primary CTA – Elite Blue
     primary:
-      "bg-[#14608D] text-white border-[#14608D] hover:opacity-95 focus:ring-[#14608D]/40",
+      "bg-[var(--elite-green)] text-white border-[var(--elite-blue)] " +
+      "hover:opacity-95 focus:ring-[var(--elite-blue)]/40",
 
-    // Outline – Elite Blue
     outline:
-      "bg-white text-[#14608D] border-[#14608D]/30 hover:bg-[#14608D]/10 focus:ring-[#14608D]/30",
+      "bg-white text-[var(--elite-blue)] border-[var(--elite-blue)]/30 " +
+      "hover:bg-[var(--elite-blue)]/10 focus:ring-[var(--elite-blue)]/30",
 
-    // Soft – light Elite Blue background
     soft:
-      "bg-[#14608D]/10 text-[#14608D] border-[#14608D]/20 hover:bg-[#14608D]/20 focus:ring-[#14608D]/30",
+      "bg-[var(--elite-blue)]/10 text-[var(--elite-blue)] border-[var(--elite-blue)]/20 " +
+      "hover:bg-[var(--elite-blue)]/20 focus:ring-[var(--elite-blue)]/30",
 
-    // OPTIONAL: Landscaping / success action (Elite Green)
     success:
-      "bg-[#448A35] text-white border-[#448A35] hover:opacity-95 focus:ring-[#448A35]/40",
+      "bg-[var(--elite-green)] text-white border-[var(--elite-green)] " +
+      "hover:opacity-95 focus:ring-[var(--elite-green)]/40",
   };
 
   return (

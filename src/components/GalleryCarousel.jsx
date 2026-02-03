@@ -1,4 +1,6 @@
 import { useEffect, useRef, useState } from "react";
+import {ELITE} from "@/lib/Brand";
+
 export const galleryImages = [
         "img1.jpeg",
         "img2.jpeg",
@@ -94,13 +96,13 @@ export default function GalleryCarousel({
             {(title) && (
 
                 <div className="mx-auto mb-6 max-w-3xl text-center">
-                    {title ? <h2 className="text-4xl sm:text-5xl font-bold text-blue-900 leading-tight mb-6 text-center">{title}</h2> : null}
+                    {title ? <h2 className="text-4xl sm:text-5xl font-bold leading-tight mb-6 text-center" style={{ color: ELITE.blue }}>{title}</h2> : null}
                 </div>
             )}
 
             <div >
                 {!hasImages ? (
-                    <div className="rounded-2xl border border-dashed border-gray-300 bg-gray-50 p-10 text-center text-sm text-gray-600">
+                    <div className="border border-dashed border-gray-300 bg-gray-50 p-10 text-center text-sm text-gray-600">
                         No images yet. Add files to <span className="font-semibold">public/images/gallery/</span>
                         <div className="mt-2 text-xs text-gray-500">
                             Then pass their filenames to <code className="font-mono">images</code>.
@@ -110,7 +112,7 @@ export default function GalleryCarousel({
                     <>
                         {/* Carousel */}
                         <div
-                            className="relative w-full max-h-[80vh] overflow-hidden rounded-2xl flex items-center justify-center bg-gray-50"
+                            className="relative w-full max-h-[80vh] overflow-hidden flex items-center justify-center bg-gray-50"
                             onTouchStart={(e) => setTouchStartX(e.touches[0].clientX)}
                             onTouchEnd={(e) => setTouchEndX(e.changedTouches[0].clientX)}
                         >
@@ -126,7 +128,7 @@ export default function GalleryCarousel({
                                         key={`${img}-${idx}`}
                                         src={srcFor(img)}
                                         alt={`Gallery image ${idx + 1}`}
-                                        className="w-full h-auto max-h-[80vh] object-contain mx-auto shrink-0 rounded-xl"
+                                        className="w-full h-auto max-h-[80vh] object-contain mx-auto shrink-0"
                                         loading="lazy"
                                     />
                                 ))}

@@ -1,6 +1,7 @@
 import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import ReCAPTCHA from "react-google-recaptcha";
+import {ELITE} from "@/lib/Brand";
 
 export default function ContactForm({ onSuccess }) {
   const formRef = useRef(null);

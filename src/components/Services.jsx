@@ -1,17 +1,16 @@
 import { Card, CardContent } from "@/components/ui/Card";
 import { useMemo } from "react";
+import {ELITE} from "@/lib/Brand";
+
 import {
   Sparkles,
   Building2,
   Home,
   ClipboardCheck,
-  SprayCan,
-  Trash2,
   Leaf,
   Scissors,
   Shovel,
   Trees,
-  CheckCircle2,
 } from "lucide-react";
 
 export default function Services() {
@@ -109,29 +108,6 @@ export default function Services() {
         ],
       },
 
-      // VALUE / TRUST
-      {
-        category: "Service",
-        title: "Supplies & Equipment",
-        icon: SprayCan,
-        accent: "blue",
-        items: [
-          "We bring professional supplies/tools",
-          "Eco-friendly options on request",
-          "Checklist process for consistent results",
-        ],
-      },
-      {
-        category: "Service",
-        title: "Fast Quotes",
-        icon: CheckCircle2,
-        accent: "blue",
-        items: [
-          "Clear scope of work",
-          "Upfront pricing",
-          "No obligation",
-        ],
-      },
     ],
     []
   );
@@ -143,7 +119,7 @@ export default function Services() {
     <section id="services" className="py-16 px-4">
       <div className="max-w-6xl mx-auto">
         <div className="bg-white/80 backdrop-blur-sm shadow-xl border border-white/40 p-8 sm:p-12 rounded-2xl">
-          <h2 className="text-4xl sm:text-5xl font-bold leading-tight mb-3 text-center text-slate-900">
+          <h2 className="text-4xl sm:text-5xl font-bold leading-tight mb-3 text-center text-slate-900" style={{ color: ELITE.blue }}>
             Our Services
           </h2>
           <p className="text-center text-slate-700 mb-10">
