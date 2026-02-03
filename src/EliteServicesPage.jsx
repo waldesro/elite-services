@@ -14,10 +14,10 @@ import { Modal } from "@/components/ui/Modal";
 const BRAND = {
     name: "Elite Services",
     tagline: "Cleaning • Landscaping",
-    phoneDisplay: "(314) 000-0000",
-    phoneTel: "+13140000000",
+    phoneDisplay: "(573) 825-6415",
+    phoneTel: "+5738256415",
     email: "youremail@domain.com",
-    serviceAreas: ["Columbia", "Jefferson"],
+    serviceAreas: ["Columbia", "Jefferson City"],
 };
 
 export default function EliteServicesPage() {
@@ -114,7 +114,7 @@ export default function EliteServicesPage() {
                             </div>
 
                             <div className="mt-8 text-sm text-slate-600">
-                                Free estimates • Reliable scheduling • Respectful cleanup • Recurring plans available
+                                Free estimates • Reliable scheduling • Fully Focused on Quality & Care • Recurring plans available
                             </div>
                         </div>
                     </div>
@@ -134,18 +134,15 @@ export default function EliteServicesPage() {
 
                         <div className="max-w-4xl mx-auto">
                             <p className="text-lg mb-4 text-justify text-gray-800">
-                                {BRAND.name} provides dependable cleaning for homes and offices, plus landscaping services to keep properties
-                                looking clean, polished, and well-maintained. Whether you need recurring service or a one-time refresh, we
-                                focus on consistent quality.
+                                At {BRAND.name}, we treat every property with care and precision. Our professional cleaning and landscaping services are built on detailed checklists, respectful workmanship, and a commitment to leaving every space looking its best—every time.
                             </p>
 
                             <p className="text-lg mb-4 text-justify text-gray-800">
-                                We treat every space with care—from detailed cleaning checklists and respectful workmanship, to leaving the
-                                area neat at the end of each visit. Our goal is simple: deliver results you can be proud of and service you’d recommend.
+                                Whether it's ongoing maintenance or a single refresh, you'll see the difference in our consistency and results.
                             </p>
 
                             <p className="text-lg mt-6 italic text-justify text-gray-700">
-                                Our mission is excellence from beginning to end—accurate estimates, reliable scheduling, and a property that looks its best.
+                                Our mission is excellence from beginning to end, accurate estimates, reliable scheduling, and a property that looks its best.
                             </p>
 
                             {/* Optional service area chips */}
@@ -168,7 +165,7 @@ export default function EliteServicesPage() {
             <Services />
 
             {/* Gallery */}
-            <div className="py-20 px-4 max-w-6xl mx-auto">
+            <div className="max-w-6xl mx-auto">
                 <div className="bg-white/80 backdrop-blur-sm shadow-xl border rounded-2xl border-white/40 p-6 sm:p-10">
                     <GalleryCarousel title="Work Gallery" autoPlay autoPlayInterval={5000} />
                 </div>

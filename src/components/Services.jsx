@@ -122,10 +122,6 @@ export default function Services() {
           <h2 className="text-4xl sm:text-5xl font-bold leading-tight mb-3 text-center text-slate-900" style={{ color: ELITE.blue }}>
             Our Services
           </h2>
-          <p className="text-center text-slate-700 mb-10">
-            Professional cleaning for offices and homes—plus landscaping to keep your property looking sharp.
-          </p>
-
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {services.map((service) => {
               const Icon = service.icon;
