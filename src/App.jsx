@@ -1,5 +1,5 @@
 import EliteServicesPage from "@/EliteServicesPage";
-import "./app.css";
+import "./App.css";
 
 export default function App() {
   return <EliteServicesPage />;
