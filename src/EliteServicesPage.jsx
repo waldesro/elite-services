@@ -154,8 +154,8 @@ export default function EliteServicesPage() {
 
 
             {/* About Us */}
-            <section className="py-8 px-4">
-                <div className="max-w-6xl mx-auto bg-blue-50">
+            <section className="py-8 px-4 bg-blue-50">
+                <div className="max-w-6xl mx-auto">
                     <div className="max-w-4xl mx-auto">
                         <div className="text-center">
                             <h2 className="mt-2 text-3xl sm:text-4xl lg:text-5xl font-semibold text-(--elite-green)">
