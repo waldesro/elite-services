@@ -154,7 +154,7 @@ export default function EliteServicesPage() {
 
 
             {/* About Us */}
-            <section className="py-8 px-4 bg-blue-50">
+            <section className="py-8 px-4 bg-white">
                 <div className="max-w-6xl mx-auto">
                     <div className="max-w-4xl mx-auto">
                         <div className="text-center">
