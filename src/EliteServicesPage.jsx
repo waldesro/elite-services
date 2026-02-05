@@ -154,8 +154,8 @@ export default function EliteServicesPage() {
 
 
             {/* About Us */}
-            <section className="py-16 px-4 bg-slate-50">
-                <div className="max-w-6xl mx-auto">
+            <section className="py-8 px-4">
+                <div className="max-w-6xl mx-auto bg-blue-50">
                     <div className="max-w-4xl mx-auto">
                         <div className="text-center">
                             <h2 className="mt-2 text-3xl sm:text-4xl lg:text-5xl font-semibold text-(--elite-green)">
@@ -202,7 +202,7 @@ export default function EliteServicesPage() {
             <Services />
 
             {/* Gallery */}
-            <section className="py-20 px-4 bg-white">
+            <section className="py-8 px-4 bg-white">
                 <div className="max-w-6xl mx-auto">
                     <GalleryCarousel title="Work Gallery" subtitle="Gallery" autoPlay autoPlayInterval={5000} />
                 </div>

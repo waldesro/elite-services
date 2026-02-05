@@ -109,7 +109,7 @@ export default function Services() {
   );
 
   return (
-    <section id="services" className="py-20 px-4 bg-slate-50">
+    <section id="services" className="py-8 px-4 bg-green-50">
       <div className="max-w-6xl mx-auto">
         {/* Section header */}
         <div className="max-w-3xl text-center mx-auto">
