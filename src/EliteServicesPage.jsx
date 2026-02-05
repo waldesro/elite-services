@@ -50,8 +50,8 @@ export default function EliteServicesPage() {
                 hidden sm:flex items-center
                 rounded-full px-4 py-2 text-sm font-semibold
                 border border-slate-200 bg-white
-                text-[color:var(--elite-blue)]
-                hover:bg-[color:var(--elite-blue)]/10
+                text-(--elite-blue)
+                hover:bg-(--elite-blue)/10
                 transition shadow-sm
               "
                         >
@@ -80,8 +80,8 @@ export default function EliteServicesPage() {
                 sm:hidden inline-flex items-center
                 rounded-full px-4 py-2 text-sm font-semibold
                 border border-slate-200 bg-white
-                text-[color:var(--elite-blue)]
-                hover:bg-[color:var(--elite-blue)]/10
+                text-(--elite-blue)
+                hover:bg-(--elite-blue)/10
                 transition shadow-sm
               "
                         >
