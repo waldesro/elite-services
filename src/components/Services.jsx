@@ -1,7 +1,4 @@
-import { Card, CardContent } from "@/components/ui/Card";
 import { useMemo } from "react";
-import {ELITE} from "@/lib/brand";
-
 import {
   Sparkles,
   Building2,
@@ -107,71 +104,72 @@ export default function Services() {
           "Final blow-down for a polished look",
         ],
       },
-
     ],
     []
   );
 
-  const eliteBlue = "#14608D";
-  const eliteGreen = "#448A35";
-
   return (
-    <section id="services" className="py-16 px-4">
+    <section id="services" className="py-20 px-4 bg-slate-50">
       <div className="max-w-6xl mx-auto">
-        <div className="bg-white/80 backdrop-blur-sm shadow-xl border border-white/40 p-8 sm:p-12 rounded-2xl">
-          <h2 className="text-4xl sm:text-5xl font-bold leading-tight mb-3 text-center text-slate-900" style={{ color: ELITE.blue }}>
-            Our Services
-          </h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {services.map((service) => {
-              const Icon = service.icon;
-              const isGreen = service.accent === "green";
+        {/* Section header */}
+        <div className="max-w-3xl text-center mx-auto">
+          <p className="mt-2 text-3xl sm:text-4xl lg:text-5xl font-semibold text-(--elite-green)">
+            Services
+          </p>
+        </div>
+        {/* Grid */}
+        <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+          {services.map((service) => {
+            const Icon = service.icon;
+            const isGreen = service.accent === "green";
 
-              const accentColor = isGreen ? eliteGreen : eliteBlue;
-              const badgeBg = isGreen ? "bg-[#448A35]/10" : "bg-[#14608D]/10";
-              const badgeText = isGreen ? "text-[#448A35]" : "text-[#14608D]";
+            const accent = isGreen
+              ? "text-[color:var(--elite-green)]"
+              : "text-[color:var(--elite-blue)]";
 
-              return (
-                <Card key={service.title} className="text-center p-6">
-                  <CardContent>
-                    {/* Category badge */}
-                    <div className="mb-3">
-                      <span
-                        className={`inline-flex items-center rounded-full px-3 py-1 text-xs font-semibold ${badgeBg} ${badgeText}`}
-                      >
-                        {service.category}
-                      </span>
-                    </div>
+            const chip = isGreen
+              ? "bg-[color:var(--elite-green)]/10 text-[color:var(--elite-green)]"
+              : "bg-[color:var(--elite-blue)]/10 text-[color:var(--elite-blue)]";
 
-                    <Icon
-                      className="mx-auto"
-                      size={40}
-                      style={{ color: accentColor }}
-                    />
+            const dot = isGreen
+              ? "bg-[color:var(--elite-green)]"
+              : "bg-[color:var(--elite-blue)]";
 
-                    <h3 className="text-xl font-semibold mt-4 mb-3 text-slate-900">
-                      {service.title}
-                    </h3>
+            return (
+              <div
+                key={service.title}
+                className="
+                  rounded-2xl bg-white border border-slate-200
+                  p-6
+                  shadow-none
+                  hover:border-slate-300 hover:bg-slate-50/40
+                  transition
+                "
+              >
+                {/* Top row */}
+                <div className="flex items-center justify-between gap-3">
+                  <span className={`inline-flex items-center rounded-full px-3 py-1 text-xs font-semibold ${chip}`}>
+                    {service.category}
+                  </span>
 
-                    <ul className="space-y-1 text-sm text-slate-700">
-                      {service.items.map((item) => (
-                        <li
-                          key={item}
-                          className="flex items-start gap-2 text-left"
-                        >
-                          <span
-                            className="mt-1 h-1.5 w-1.5 flex-none rounded-full"
-                            style={{ backgroundColor: accentColor }}
-                          />
-                          <span>{item}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </CardContent>
-                </Card>
-              );
-            })}
-          </div>
+                  <Icon className={`${accent}`} size={28} />
+                </div>
+
+                <h3 className="mt-4 text-lg font-semibold text-slate-900">
+                  {service.title}
+                </h3>
+
+                <ul className="text-justify mt-4 space-y-2 text-[13px] sm:text-sm text-slate-600">
+                  {service.items.map((item) => (
+                    <li key={item} className="flex items-start gap-2">
+                      <span className={`mt-2 h-1.5 w-1.5 rounded-full flex-none ${dot}`} />
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            );
+          })}
         </div>
       </div>
     </section>
